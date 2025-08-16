@@ -1,0 +1,132 @@
+<p>footer works!</p>
+<footer class="footer">
+      <div class="footer-container">
+        <!-- კომპანიის ინფორმაცია -->
+        <div class="footer-section">
+          <h3 class="footer-title">მარგო ევაკუატორი</h3>
+          <p class="footer-description">
+            სანდო და სწრაფი ევაკუატორის სერვისი თბილისში და მთელს საქართველოში.
+            24/7 მომსახურება ყველა სახის ავტომობილისთვის.
+          </p>
+          <div class="working-hours">
+            <h4>მუშაობის საათები:</h4>
+            <p>24 საათი, 7 დღე კვირაში</p>
+          </div>
+        </div>
+
+        <!-- სერვისები -->
+        <div class="footer-section">
+          <h3 class="footer-title">ჩვენი სერვისები</h3>
+          <ul class="footer-list">
+            <li><a href="#" (click)="scrollToServices()">ევაკუაცია</a></li>
+            <li><a href="#" (click)="scrollToServices()">მანქანის ბუქსირება</a></li>
+            <li><a href="#" (click)="scrollToServices()">გზაზე დახმარება</a></li>
+            <li><a href="#" (click)="scrollToServices()">საავარიო სერვისი</a></li>
+            <li><a href="#" (click)="scrollToServices()">მოტოციკლების ევაკუაცია</a></li>
+            <li><a href="#" (click)="scrollToServices()">სპეცტექნიკის ევაკუაცია</a></li>
+          </ul>
+        </div>
+
+        <!-- კონტაქტი -->
+        <div class="footer-section">
+          <h3 class="footer-title">კონტაქტი</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <p class="contact-label">საავარიო ნომერი:</p>
+                <a href="tel:+995555123456" class="contact-link emergency">
+                  +995 555 123 456
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <div>
+                <p class="contact-label">ძირითადი ნომერი:</p>
+                <a href="tel:+995555789012" class="contact-link">
+                  +995 555 789 012
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <p class="contact-label">ელ-ფოსტა:</p>
+                <a href="mailto:info@margoevacu.ge" class="contact-link">
+                  info.margoevacu.ge
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <p class="contact-label">მისამართი:</p>
+                <p class="address">თბილისი, საქართველო</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- სოციალური მედია -->
+        <div class="footer-section">
+          <h3 class="footer-title">გამოგვყევით</h3>
+          <div class="social-media">
+            <a href="#" class="social-link facebook" (click)="openSocialMedia('facebook')">
+              <span class="social-icon">📘</span>
+              Facebook
+            </a>
+            <a href="#" class="social-link instagram" (click)="openSocialMedia('instagram')">
+              <span class="social-icon">📷</span>
+              Instagram
+            </a>
+            <a href="#" class="social-link whatsapp" (click)="openWhatsApp()">
+              <span class="social-icon">💬</span>
+              WhatsApp
+            </a>
+            <a href="tel:+995555123456" class="social-link phone">
+              <span class="social-icon">📞</span>
+              ზარი
+            </a>
+          </div>
+
+          <!-- სწრაფი მოქმედებები -->
+          <div class="quick-actions">
+            <button class="cta-button emergency" (click)="callEmergency()">
+              საავარიო ზარი
+            </button>
+            <button class="cta-button" (click)="requestService()">
+              სერვისის მოთხოვნა
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ქვედა ბარი -->
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <div class="footer-bottom-content">
+            <p class="copyright">
+              © {{ currentYear }} მარგო ევაკუატორი. ყველა უფლება დაცულია.
+            </p>
+            <div class="footer-links">
+              <a href="#" (click)="openPrivacyPolicy()">კონფიდენციალურობის პოლიტიკა</a>
+              <a href="#" (click)="openTerms()">მომსახურების პირობები</a>
+              <a href="#" (click)="openFAQ()">ხშირად დასმული კითხვები</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ლიცენზია და სერტიფიკატები -->
+      <div class="licenses">
+        <div class="footer-container">
+          <p class="license-text">
+            ლიცენზირებული ტრანსპორტირების კომპანია | სამინისტროს რეგისტრაცია № 123456789
+          </p>
+        </div>
+      </div>
+    </footer>

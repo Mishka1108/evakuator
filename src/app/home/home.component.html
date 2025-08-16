@@ -1,0 +1,136 @@
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="hero-title">24/7 ევაკუატორი თბილისში</h1>
+        <p class="hero-subtitle">
+          სწრაფი და საიმედო ევაკუატორის სერვისი ყველა ტიპის ავტომობილისთვის
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-emergency" (click)="callEmergency()">
+            <i class="fas fa-phone-alt"></i>
+            გამოძახება
+          </button>
+          <button class="btn btn-secondary" (click)="scrollToServices()">
+            <i class="fas fa-list"></i>
+            სერვისები
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://avatars.mds.yandex.net/get-altay/16105091/2a000001978cfd237eac19fe51f59e7c5b60/L_height" alt="ევაკუატორი" />
+  </div>
+</section>
+
+<!-- Quick Stats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">მუშაობა</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15 წთ</div>
+        <div class="stat-label">მინ. დრო</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1000+</div>
+        <div class="stat-label">კმაყოფილი კლიენტი</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5★</div>
+        <div class="stat-label">შეფასება</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>ჩვენი სერვისები</h2>
+      <p>ვთავაზობთ ყველა ტიპის ავტომობილის ევაკუაციას</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services">
+        <div class="service-icon">
+          <i [class]="service.icon"></i>
+        </div>
+        <div class="service-content">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <div class="service-price">{{ service.price }}</div>
+        </div>
+        <button 
+          class="btn btn-primary" 
+          (click)="requestService(service.id)"
+        >
+          შეკვეთა
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>როგორ მუშაობს</h2>
+      <p>მარტივი და სწრაფი პროცესი</p>
+    </div>
+    
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h4>დაკავშირება</h4>
+          <p>დაგვირეკეთ ან გამოიყენეთ ონლაინ ფორმა</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h4>ლოკაციის გაგზავნა</h4>
+          <p>მითითეთ თქვენი ზუსტი მდებარეობა</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h4>ევაკუატორის ჩამოსვლა</h4>
+          <p>ჩვენი გუნდი მოვა 15-20 წუთში</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h4>ღირებულების გადახდა</h4>
+          <p>გადაიხადეთ მოხერხებული მეთოდით</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="emergency-section">
+  <div class="container">
+    <div class="emergency-card">
+      <div class="emergency-content">
+        <h3>გჭირდებათ ევაკუატორი?</h3>
+        <p>24/7 მზადყოფნაში ვართ დაგეხმაროთ</p>
+      </div>
+      <button class="btn btn-emergency-large" (click)="callEmergency()">
+        <i class="fas fa-phone-alt"></i>
+        დაკავშირება: 555-123-456
+      </button>
+    </div>
+  </div>
+</section>
